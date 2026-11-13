@@ -45,21 +45,21 @@ Bạn đặt keyframe nhiều nhất ở người nào? Vì sao (người đó r
 
 ## 3. Đoạn bị che (CP2)
 
-Người bị che: `P5` *(người đàn ông mặc áo khoác đen đeo túi bên trái)*
+Người bị che: `P4` *(em bé đứng cạnh mẹ)*
 
 | Mốc | Frame |
 | --- | --- |
-| Bắt đầu bị che một phần (bật `occluded`) | 37 *(frame 36 trên CVAT)* |
-| Mất hẳn (bật `outside`) | 122 *(frame 121 trên CVAT)* |
-| Hiện lại (tắt `outside`) | 129 *(frame 128 trên CVAT)* |
-| Thấy rõ trở lại (tắt `occluded`) | Vẫn còn bị che một phần sau P1 cho tới khi rời vùng theo dõi ở frame 138 *(frame 137 trên CVAT)* |
+| Bắt đầu bị che một phần (bật `occluded`) | 107 *(frame 107 trên CVAT)* |
+| Mất hẳn (bật `outside`) | 111 *(frame 111 trên CVAT)* |
+| Hiện lại (tắt `outside`) | 137 *(frame 137 trên CVAT)* |
+| Thấy rõ trở lại (tắt `occluded`) | *(frame 141 trên CVAT)* |
 
-* Thời gian khuất hẳn: `7` frame (từ frame 122 đến 128 theo `gt.txt`, tức frame 121–127 trên CVAT) = `0.23` giây (với tốc độ video $30\text{ fps}$).
-* Quyết định: **giữ cùng ID** (`Track ID 5`).
-* Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
-  1. **Thời gian khuất so với ngưỡng 60 frame:** Đối tượng chỉ khuất hoàn toàn phía sau P1 trong **7 frame ($\approx 0.23\text{ giây}$)**, ngắn hơn rất nhiều so với ngưỡng quy định là **60 frame ($2\text{ giây}$)**.
-  2. **Ngoại hình khớp:** Khi lộ diện trở lại ở frame 129, đối tượng vẫn giữ nguyên đặc điểm nhận dạng (áo khoác tối màu, quần sáng màu và túi đeo hông).
-  3. **Hướng và tốc độ di chuyển:** Vị trí xuất hiện lại nằm ngay phía bên phải P1, hoàn toàn khớp với quỹ đạo di chuyển từ trái sang phải và tốc độ bước đi trước khi bị che khuất.
+- Thời gian khuất hẳn: 29 frame = 0.97 giây.
+- Quyết định: giữ cùng ID (`Track ID 4`).
+- Lý do (trả lời 3 câu: khuất bao lâu so với 60 frame, ngoại hình có khớp, chỗ hiện lại có đúng hướng và tốc độ):
+  1. **Thời gian khuất so với ngưỡng 60 frame:** Đối tượng chỉ khuất hoàn toàn trong khoảng 29 frame ($\approx 0.97$ giây), ngắn hơn nhiều so với ngưỡng quy định là 60 frame (2 giây).
+  2. **Ngoại hình khớp:** Khi lộ diện trở lại, em bé vẫn giữ nguyên đặc điểm nhận dạng và trang phục (váy sáng màu) ban đầu.
+  3. **Hướng và tốc độ di chuyển:** Vị trí và hướng xuất hiện lại hoàn toàn đồng bộ với quỹ đạo di chuyển ở khu vực cạnh người mẹ trước đó.
 
 Ảnh chụp màn hình:
 
